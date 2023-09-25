@@ -1,0 +1,214 @@
+.travelo_footer {
+    border: 30px solid none;
+    background: rgb(226, 232, 247);
+    border-radius: 8px;
+    display: flex;
+}
+
+/* Used attribute selector which will select all the elements having attribute name with value as copyright */
+
+[name~="copyright"] {
+    color: rgb(55, 55, 59);
+    font-size: 10px;
+    margin-top: 2.5%;
+    margin-left: 4px;
+}
+
+/* Used attribute selector which will select all the elements having attribute name with value as footer or elements having value as footer followed by hyphen */
+
+[class |="footer"] {
+    padding-left: 275px;
+}
+
+/* Used child selector property */
+
+ul.footer-nav-links>li>a {
+    padding: 4px;
+}
+
+/* Used attribute selector which will select all the elements having attribute name with value as social */
+
+[type~="social"]{
+        padding: 3px;
+        font-size: 20px;
+        width: 20px;
+        margin: 26px 2px;
+        border-radius:50%;
+        text-align: center;
+        text-decoration: none;
+        background: black;
+    color: white;
+}
+
+/* Sets the height and width of all the destination images in the recommended destination section */
+
+.destinations {
+    width: 90%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.singapore,
+.paris,
+.thailand,
+.new_zealand,
+.bora_bora,
+.london {
+    margin-top: 20px;
+    margin-left: 19px;
+}
+
+/* Used flex property for aligning the images in the recommended destination section */
+
+.first_row_destinations,
+.second_row_destinations {
+    display: flex;
+    padding-top: 8px;
+    flex-direction: row;
+    color: rgb(32, 51, 54);
+}
+
+.destinationIcons {
+    width: 45%;
+}
+
+.recommended_destinations_nav {
+    padding-left: 350px;
+    margin-right: 50px;
+    margin-top: 35px;
+    position: relative;
+}
+
+ul.recommended_destinations_nav>li>a {
+    padding: 14px;
+    color: rgb(34, 53, 57);
+}
+
+/* Used pseudo element selector for highlighting the links in the recommended destination section */
+
+.recommended_destinations_nav_1::before {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid rgb(236, 238, 240);
+    bottom: 0;
+    width: 45%;
+    right: 198px;
+}
+
+/* Used pseudo element selector for highlighting the first link in the recommended destination section */
+
+.weekend_break:before {
+    content: '';
+    position: absolute;
+    border-bottom: 4px solid rgb(30, 49, 52);
+    width: 5%;
+    padding-left: 77px;
+    margin-top: 32px;
+
+}
+
+.recommended_destination_section {
+    margin-top: 90px;
+    box-shadow: 5px 10px 8px 15px rgb(247, 247, 252);
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 28px;
+    margin-bottom: 50px;
+}
+
+/* Sets the properties of the blog section */
+
+img[class="mount_kilimanjaro"] {
+    float: left;
+    width: 50%;
+    height: 20%;
+    padding: 14px;
+}
+
+img+.blog2_blog_3 {
+    width: 41%;
+    height: 27%;
+    padding: 11px;
+}
+
+/* Sets the properties of the customer review section by aligning the elements */
+
+.happy_customers {
+    max-width: 10%;
+    float: left;
+    margin-left: 2%;
+}
+
+/* Used for aligning the customer review section */
+
+.customer_review {
+    display: flex;
+    padding: 30px 30px;
+}
+
+/* Sets the color of the review section */
+
+.happy_customers+figcaption {
+    color: rgb(56, 56, 56);
+}
+
+.customer_name+figcaption {
+    color: rgb(159, 158, 158);
+}
+
+/* Used for creating the box around the review section */
+
+.customer_review_1_2 {
+    box-shadow: 5px 10px 8px 15px rgb(247, 247, 252);
+    border-radius: 10px;
+    width: 35%;
+    display: inline-block;
+    padding: 2px 10px;
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+}
+
+.shalini_customer_review {
+    padding-left: 60px;
+}
+
+.customer_review_1_2:before {
+    content: open-quote;
+    font-size: 100px;
+    color: rgb(212, 221, 243);
+    padding-bottom: 20px;
+    float: left;
+    margin-right: 8px;
+}
+
+.customer_review_2:before {
+    content: "“";
+    font-size: 100px;
+    color: rgb(212, 221, 243);
+    padding-bottom: 20px;
+    float: left;
+    margin-right: 8px;
+}
+
+.destination_distance_image {
+    display: block;
+    float: left;
+}
+
+.destination_price_details {
+    display: block;
+    float: right;
+    text-align: right;
+}
+
+.destination_details {
+    display: flex;
+    float: left;
+    margin: 0px;
+    color: rgb(52, 70, 74);
+    font-weight: bold;
+}
+
+.destination_description {
+    font-size: 16px;
+}

@@ -1,0 +1,196 @@
+/* Created an external stylesheet for styling the travelling website */
+
+
+/* Used class operator which is represented using . followed by the class name. Below line is used for positioning the items of navigation bar*/
+
+.travelo_home {
+    display: inline-flex;
+}
+
+/* Used tag operator which is represented by writing the tag name. Below line will remove the bullets on the unordered list */
+
+ul {
+    display: flex;
+    list-style: none;
+    padding-left: 405px;
+    margin-right: 488px;
+}
+
+/* Used Child selector which is represented by parent tag > child tag. Below line is used for positioning the items in the unordered list*/
+
+ul>li {
+    margin: 10px;
+}
+
+/* Removes the links symbol form the navigation bar and will highlight the links with specified color */
+li>a {
+    text-decoration: none;
+    color: rgb(84, 110, 128);
+}
+
+/* Used General sibling selector which is represented by ~ symbol. Below line is used for highlighting the links on navigation bar with the below specified color*/
+.active_link~li>a {
+    color: rgb(126 140 160);
+}
+
+/* Used descendant selector which is represented by space. Below line is used to style the Connect button */
+div button {
+    border-radius: 10px;
+    float: right;
+    margin: 20px;
+    border: none;
+    text-align: center;
+}
+
+.connect_button {
+    border-radius: 20px;
+    height: 6%;
+    width: 12%;
+    border: none;
+    padding: 4px 15px;
+}
+
+.explore_now_button {
+    border-radius: 10px;
+    margin-top: 3px;
+    border: none;
+    float: left;
+    margin: 10px;
+}
+
+/* Used adjacent sibling selector which is represented by + symbol. Below line is used to sets the width of the image */
+h1+img {
+    width: 100%;
+}
+
+.travel-to-explore {
+    position: absolute;
+    top: 25%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.travel-to-explore_lorem {
+    position: absolute;
+    top: 35%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    color: rgb(245, 247, 247);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.explore-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(37, 36, 37);
+    border-radius: 7px;
+    background: rgb(255, 255, 255);
+    width: 47%;
+    height: 8%;
+    opacity: .8;
+}
+
+/* Used Pseudo Class. This will help for positioning the button */
+
+button {
+    border-radius: 7px;
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    background-color: rgb(74, 100, 211);
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(46, 108, 207);
+}
+
+/* Used attribute selector which will select all the elements having attribute value as search. Below line is used to remove the borders of the textbox and making the textbox transparent */
+[type*="search"] {
+    background: transparent;
+    border: none;
+}
+
+/* Used for making the date input transparent by using the attribute selector */
+input[placeholder$="Date"] {
+    background: transparent;
+    border: none;
+}
+
+/* Used for increasing the transparency of the search icon */
+
+i {
+    opacity: 0.3;
+    font-size: 0.5%;
+}
+
+label.search {
+    display: block;
+}
+
+.input-form {
+    float: left;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+/* Used attribute selector which will select all the elements with tag div having attribute as name */
+
+div[name] {
+    border-right: 2px solid rgb(231, 232, 231);
+}
+
+/* '*' selects all the elements. Below line is used to set the font of the entire website */
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.travelo_image {
+    width: 15%;
+    height: 10%;
+    margin: 10px;
+}
+
+.about {
+    display: flex;
+    margin-top: 70px;
+    margin-bottom:50px;
+}
+
+.about_images {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Used attribute selector which will select all the elements having class value as aboutSelection. Below line is used for creating the box around the section */
+
+[class^="aboutSection"] {
+    box-shadow: 5px 10px 8px 15px rgb(247, 247, 252);
+    border-radius: 10px;
+    padding: 2px 5px;
+    width: 20%;
+}
+
+.about_images+figcaption {
+    padding: 0px 11px;
+    color: rgb(29, 28, 29);
+}
+
+/* Used adjacent sibling selector */
+
+figcaption+p {
+    padding: 0px 11px;
+    font-size: 12px;
+    font-weight: rgb(50, 50, 50);
+}

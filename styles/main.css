@@ -1,0 +1,7 @@
+/* Below line imports the  travelo stylesheet which is used to style the home page, about section and the form*/
+
+@import 'travelo.css';
+
+/* Below line imports the recommendedDestinatios_Blogs stylesheet which is used to style the Recommended Destination and Blogs section */
+
+@import 'recommendedDestinations_Blogs.css';
